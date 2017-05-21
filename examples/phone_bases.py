@@ -9,6 +9,6 @@ client = IntisClient(API_LOGIN, API_KEY, host=API_HOST)
 try:
     phone_bases = client.get_phone_bases()
     for phone_base in phone_bases:
-        print(vars(phone_base))
+        print((vars(phone_base)))
 except IntisError as e:
     print(e)

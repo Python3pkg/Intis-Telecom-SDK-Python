@@ -9,6 +9,6 @@ client = IntisClient(API_LOGIN, API_KEY, host=API_HOST)
 try:
     templates = client.get_templates()
     for template in templates:
-        print(vars(template))
+        print((vars(template)))
 except IntisError as e:
     print(e)

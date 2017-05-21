@@ -9,6 +9,6 @@ client = IntisClient(API_LOGIN, API_KEY, host=API_HOST)
 try:
     prices = client.get_prices()
     for price in prices:
-        print(vars(price))
+        print((vars(price)))
 except IntisClient.Error as e:
     print(e)

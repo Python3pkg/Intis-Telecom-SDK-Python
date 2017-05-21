@@ -9,6 +9,6 @@ client = IntisClient(API_LOGIN, API_KEY, host=API_HOST)
 try:
     hrl_response_list = client.make_hrl_request('79143453229')
     for hrl_response in hrl_response_list:
-        print(vars(hrl_response))
+        print((vars(hrl_response)))
 except IntisError as e:
     print(e)

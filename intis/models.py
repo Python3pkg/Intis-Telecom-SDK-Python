@@ -52,7 +52,7 @@ class ModelBase(object):
                         setattr(self, field[0], None)
 
         if self.use_not_specified:
-            for key, value in kwargs.items():
+            for key, value in list(kwargs.items()):
                 setattr(self, key, value)
 
 

@@ -1,4 +1,4 @@
-from __future__ import unicode_literals, print_function
+
 
 import json
 import hashlib
@@ -10,7 +10,7 @@ try:
 except ImportError:
     import urllib2 as urllib_request
     import urllib2 as urllib_error
-    from urllib import urlencode
+    from urllib.parse import urlencode
 
 
 from intis.exceptions import IntisApiError, IntisHTTPError, IntisError, ERROR_EMPTY_RESPONSE_CODE

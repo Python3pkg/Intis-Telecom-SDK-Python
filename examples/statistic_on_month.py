@@ -9,6 +9,6 @@ client = IntisClient(API_LOGIN, API_KEY, host=API_HOST)
 try:
     statistic_list = client.get_statistic_on_month(2014, 12)
     for statistic in statistic_list:
-        print(vars(statistic))
+        print((vars(statistic)))
 except IntisError as e:
     print(e)
